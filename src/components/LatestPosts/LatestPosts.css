@@ -1,0 +1,40 @@
+.list-group-item {
+    text-align: center;
+    border: 0px;
+}
+
+.postTitle {
+    font-size: 18px;
+}
+
+.postDate {
+    font-size: 15px;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+    border: 0px solid rgba(0,0,0,.125);
+}
+
+hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: inset;
+    border-width: 1px;
+    width: 100px;
+}
+
+.list-group-item {
+    padding: .30rem 1.25rem;
+}
+
+.card-header {
+    background-color: white;
+}

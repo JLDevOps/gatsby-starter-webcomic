@@ -1,0 +1,9 @@
+.searchResults {
+    position: absolute;
+    background-color: white;
+}
+
+.searchForm {
+    padding-left: 20px;
+    padding-right: 20px;
+}

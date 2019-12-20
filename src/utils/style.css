@@ -1,0 +1,285 @@
+:root {
+  --primary-color: #ff9800;
+  --light-primary-color: #ffe0b2;
+  --dark-primary-color: #f57c00;
+  --base-cubic-bezier: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --base-background: #fff;
+  --dark-background: #2d2b55;
+  --white: #fff;
+  --default-icon-color: #dddde1;
+
+  --layout-width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --layout-width: 90%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--base-background);
+  transition: all 1s var(--base-cubic-bezier);
+
+  /* Custom Firefox scrollbar. Firefox >= 64 */
+  scrollbar-width: thin;
+  scrollbar-color: light;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+*:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+body.dark {
+  background-color: var(--dark-background);
+  color: #fff;
+}
+
+.home .post + .post {
+  margin-top: 41px;
+  border: 1px solid rgba(0,0,0,.125);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.home .post h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+}
+
+.btn-float-wrapper {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+.main-content aside {
+  grid-area: aside;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+.main-content main {
+  grid-area: main;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 50px;
+}
+
+.main-content footer {
+  grid-area: footer;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.main-content {
+  min-height: 100vh;
+  margin-top: 40.1px;
+  display: grid;
+  grid-template-columns: 35% auto;
+  grid-template-areas:
+    'aside main'
+    'footer footer';
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-content {
+    grid-template-columns: auto;
+    grid-template-areas:
+      'main'
+      'aside'
+      'footer';
+  }
+
+  .main-content main {
+    grid-area: main;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+  }
+
+}
+
+.main-content .posts div:first-child h3 {
+  margin-top: 0;
+}
+
+.posts .post {
+  margin-bottom: 3rem;
+  border: 1px solid rgba(0,0,0,.125);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.post {
+  border: 1px solid rgba(0,0,0,.125);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+a {
+  color: var(--primary-color);
+}
+a:hover {
+  color: var(--dark-primary-color);
+}
+
+/*
+ * Page footer
+ */
+.social-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.social-links li a {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.social-links li a:hover .icon svg {
+  fill: var(--primary-color);
+}
+
+/*
+ * Tags page
+ */
+.tags a {
+  text-decoration: none;
+  box-shadow: none;
+}
+.tags a .ant-tag {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.tags {
+  text-align: center;
+}
+
+.dark blockquote {
+  color: #fff;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #fff;
+}
+
+/*
+ * ant design
+ */
+.article {
+  font-size: 16px;
+}
+
+.article h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.article ul,
+.article ol {
+  /* list-style-type: decimal; */
+  margin-left: 40px;
+}
+
+.article img {
+  border-radius: 3px;
+  background-color: #f5f5f5;
+}
+
+.article article {
+  margin-top: 21px;
+  line-height: 1.8;
+}
+
+.subtitle {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.subtitle-tag {
+  display: inline-block;
+  margin-right: 12px;
+  color: #f57c00;
+}
+
+/*
+ * ant design
+ */
+.books-toggle {
+  margin-bottom: 22px;
+}
+
+.books-toggle span {
+  font-size: 14px;
+  margin-right: 28px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.books-toggle .ant-tag-checkable:not(.ant-tag-checkable-checked):hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+/*
+ * ant design
+ */
+.ant-back-top {
+  right: 50px;
+  bottom: 100px;
+}
+.dark .ant-result-title {
+  color: var(--white);
+}
+
+.dark .ant-result-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ant-card {
+  margin-bottom: 16px;
+}
+.ant-card-cover {
+  height: 240px;
+  overflow: hidden;
+}
+.ant-card-meta-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,77 @@
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 802;
+  border-color: black;
+  transition: all 1s var(--base-cubic-bezier);
+}
+
+.dark header {
+  background-color: rgb(34, 34, 68, 0.9);
+}
+
+header .header-inner {
+  width: var(--layout-width);
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .nav {
+  display: flex;
+  align-items: center;
+}
+
+header .nav a {
+  display: block;
+  height: 41px;
+  margin-right: 41px;
+  text-decoration: none;
+  box-shadow: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-weight: bold;
+}
+header .nav a:hover {
+  color: var(--primary-color);
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,0);
+}
+
+.bg-light {
+  background-color: white!important;
+}
+
+.navbar {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+}
+

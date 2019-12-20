@@ -1,1 +1,1 @@
-# gatsby-starter-webcomic
+# Gatsby Starter Webcomic

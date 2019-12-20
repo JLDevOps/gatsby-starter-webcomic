@@ -1,0 +1,29 @@
+/*
+ * Bio component
+ */
+ .bio .avatar {
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s var(--base-cubic-bezier);
+    display: block;
+  }
+  
+  .bio .avatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-align: center;
+  }
+  
+  .bio-slogan {
+    margin-top: 8.2px;
+  }
+  
+  .bio {
+    text-align: center;
+  }
