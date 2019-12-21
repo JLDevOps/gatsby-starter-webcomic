@@ -3,6 +3,7 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
+
 # Gatsby's Webcomic Starter
 
 This is a blog boilerplate that focuses on displaying webcomics and art.
