@@ -1,10 +1,5 @@
 import { COLOR } from './constant';
 
-export function formatReadingTime(minutes) {
-  let cups = Math.round(minutes / 5);
-  return `${new Array(cups || 1).fill('🍵').join('')} ${minutes} min read`;
-}
-
 export function cacheImages(url) {
   const weserv = 'https://images.weserv.nl';
   if (url) {

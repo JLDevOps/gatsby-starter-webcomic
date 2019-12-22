@@ -5,7 +5,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer>
-        © Gatsby Comic Template - Find more on 
+        © Gatsby Starter Webcomic - Find more on 
         <a
           href='https://github.com/JLDevOps/gatsby-comic-template'
           target="_blank"
