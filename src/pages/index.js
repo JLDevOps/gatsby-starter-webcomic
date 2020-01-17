@@ -23,15 +23,15 @@ class BlogIndex extends React.Component {
               postTitle = "";
               imageQuery = <Link to={node.fields.slug}><Img fluid={featuredImgFluid} /></Link>
             } else {
-              postTitle = <h3><Link to={node.fields.slug}>{title}</Link></h3>;
+              postTitle = <h2><Link to={node.fields.slug}>{title}</Link></h2>;
             };
             return (
               <div className="post" key={node.fields.slug}>
                 {postTitle}
                 {imageQuery}
                 <p className="subtitle">
-                  {node.frontmatter.date}
-                  &nbsp; • &nbsp;
+                  <br></br>
+                  <h5>{node.frontmatter.date}</h5>
                   {node.frontmatter.tags &&
                     node.frontmatter.tags.map(tag => (
                       <span key={tag} className="subtitle-tag">

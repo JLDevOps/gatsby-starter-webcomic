@@ -10,6 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
     const blogPost = path.resolve('./src/templates/blog-post.js');
     const blogTags = path.resolve('./src/templates/blog-tags.js');
     const aboutPage = path.resolve('./src/templates/about-page.js')
+    const archivePage = path.resolve('./src/templates/archive-page.js');
 
     resolve(
       graphql(
@@ -79,6 +80,11 @@ exports.createPages = ({ graphql, actions }) => {
           path: `/about`,
           component: aboutPage
         });
+
+        createPage({
+          path: `/archive`,
+          component: archivePage
+        })
       })
     );
   });

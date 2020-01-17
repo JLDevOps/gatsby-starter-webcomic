@@ -34,7 +34,7 @@ const LatestPosts = () => {
     <div>
       <div onClick={e => setOpen(!open)}>
         <h4 style={{ textAlign: 'center' }}>Latest Posts &nbsp; 
-        { open ? (
+          { open ? (
             <FontAwesomeIcon icon={faMinus} />
             ) : (
               <FontAwesomeIcon icon={faPlus} />
@@ -65,7 +65,6 @@ const LatestPosts = () => {
             )
           })}
         </ListGroup>
-        
       </Collapse>
       </div>
     </div>

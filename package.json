@@ -3,7 +3,7 @@
   "private": true,
   "description": "Template for webcomics / artwork",
   "version": "1.0.0",
-  "author": "jldevops",
+  "author": "Jimmy Le - jldevops",
   "bugs": {
     "url": "https://github.com/JLDevOps/gatsby-starter-webcomic/issues"
   },
@@ -56,7 +56,7 @@
   },
   "devDependencies": {
     "db-book": "^1.0.3",
-    "eslint": "^6.1.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.14.3",
     "gh-pages": "^2.0.1",
     "prettier": "^1.18.2"

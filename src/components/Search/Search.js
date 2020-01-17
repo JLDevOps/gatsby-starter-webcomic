@@ -21,7 +21,7 @@ export default class Search extends Component {
     return (
       <div className="searchForm">
         <Form>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" value={this.state.query} onChange={this.search}/>
+          <FormControl type="text" placeholder="Search tags" className="mr-sm-2" value={this.state.query} onChange={this.search}/>
         </Form>
         <ListGroup variant="flush" className="searchResults">
         {this.state.results.map(page => (
@@ -32,13 +32,6 @@ export default class Search extends Component {
           </ListGroup.Item>
         ))}
         </ListGroup>
-        {/* <ul className="searchResults">
-          {this.state.results.map(page => (
-            <li key={page.id}>
-              <Link to={`/` + page.path}>{page.title}</Link>
-            </li>
-          ))}
-        </ul> */}
       </div>
     )
   }

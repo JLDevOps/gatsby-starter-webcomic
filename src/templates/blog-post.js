@@ -49,14 +49,14 @@ class BlogPostTemplate extends React.Component {
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  <FontAwesomeIcon icon={faArrowLeft} /> <h6>{previous.frontmatter.title}</h6>
+                  <FontAwesomeIcon icon={faArrowLeft} /> {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && !next.frontmatter.draft && (
                 <Link to={next.fields.slug} rel="next">
-                  <h6>{next.frontmatter.title}</h6> <FontAwesomeIcon icon={faArrowRight} />
+                   {next.frontmatter.title} <FontAwesomeIcon icon={faArrowRight} />
                 </Link>
               )}
             </li>

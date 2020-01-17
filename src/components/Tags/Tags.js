@@ -1,12 +1,10 @@
 import React from 'react';
 import { Tag } from 'antd';
-import { StaticQuery, graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import get from 'lodash/get';
-import {Card, ListGroup, Accordion, Collapse} from 'react-bootstrap';
+import { ListGroup, Collapse } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-
-
 import { tagColor } from '../../utils/helpers';
 
 const Tags = () => {
@@ -33,7 +31,7 @@ const Tags = () => {
             ) : (
               <FontAwesomeIcon icon={faPlus} />
             )
-          }
+        }
         </h4>
       </div>
       <div>
