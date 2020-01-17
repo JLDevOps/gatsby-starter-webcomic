@@ -47,6 +47,10 @@ You can find the demo **[here](https://gatsby-starter-webcomic.netlify.com/)**.
     npm install
     ```
 
+## Features List
+1. Work-In-Progress
+  1. Archive page -- a page that displays and organizes all posts based by date / time range.
+
 ## 👋 Authors
 
 * **Jimmy Le** - [Jldevops](https://github.com/jldevops)
